@@ -1,0 +1,25 @@
+compilor : 
+	converts the code into 0's and 1's
+stdio : 
+	standard input output library
+return 12 : 
+	in the compilor it says process returned 12. It is just an indecaor that the code has run properly and has returned what I wanted it to be 
+printf("Something\n"):
+	"\n" makes a line break
+printf("Something\t"):
+	"\t" makes a 4 space or a tab
+printf("Hello World\""):
+	prints : Hello World"
+printf("Hello World\\"):
+	prints : Hello World \
+int :
+	int takes a 8 byte space 	
+	if I put a huge number which is not possible to store in INT varuable, it will show a garbage value that is not same as what I initialized.
+google classroom code :
+	tvkwiy2
+OBE:
+	outcome based education 
+marks distb:
+	attandence : 20
+	assingment/online/offline: 40
+	mid/final: 40
