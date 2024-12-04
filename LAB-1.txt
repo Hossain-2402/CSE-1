@@ -23,3 +23,5 @@ marks distb:
 	attandence : 20
 	assingment/online/offline: 40
 	mid/final: 40
+scanf: 
+	The following code is not valid : scanf("%d\n",&a); here, the '\n' is not allowed.
