@@ -25,3 +25,5 @@ marks distb:
 	mid/final: 40
 scanf: 
 	The following code is not valid : scanf("%d\n",&a); here, the '\n' is not allowed.
+comments:
+	// is used to make a comment 

@@ -36,6 +36,15 @@ int main(){
 
 
 
+
+    int input;
+    printf("Your input : ");
+    scanf("%d",&input);
+
+    printf("Your input is : %d", input);
+
+    printf("\n");
+
     int input_1, input_2;
     printf("Your first input : ");
     scanf("%d",&input_1);
