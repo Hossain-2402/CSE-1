@@ -27,3 +27,6 @@ marks distb:
 	attandence : 20
 	assingment/online/offline: 40
 	mid/final: 40
+
+
+
