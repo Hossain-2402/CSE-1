@@ -1,1 +1,10 @@
-Something
+# A computer can convert 'data' into 'information' that is useful to people 
+# Computer parts:
+    Hardware 
+    Software
+    Data
+    User
+
+# Softawares are also called programmes
+# The computer reads all the datas as numbers
+# 
