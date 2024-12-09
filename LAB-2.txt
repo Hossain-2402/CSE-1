@@ -9,7 +9,7 @@
 # The computer reads all the datas as numbers (0's and 1's)
 # Four 0's and 1's can make 2^4 = 16 combinations or different numbers
 # The RAM falls under the category of "memory"
-# Hard disk drive or ssc fall under the category of "Storage"
+# Hard disk drive or ssd fall under the category of "Storage"
 # Computers main circuit board is the motherboard
 # SSD > HDD
                     HDD                      SSD
@@ -24,9 +24,11 @@
 # The disk revolves
 # the Actuator arm gets into contact with the moving disk and read the data
 # RAM stores the data temporarily (volatile). The datas disappear when the computer is turned off. 
-# ROM is not volatile. Rom contains the operation system (OS) [3-1 has a OS course]
+# ROM is not volatile. Rom contains the operation system (OS) [3-1 has a OS course]. When a computer is turned on, the rom runs a small part of OS that it contains.
 # Bit is the smallest unit of data that is stored. 
-1 BYTE = 8 Bits
+
+# Byte - bit
+    1 BYTE = 8 Bits
      1KB = 1024 BYTE
 # ALU = Airthmetical and Logic unit 
 # input -> memory-> ALU -> memory
