@@ -31,7 +31,7 @@
     1 BYTE = 8 Bits
      1KB = 1024 BYTE
 # ALU = Airthmetical and Logic unit 
-# input -> memory-> ALU -> memory
+# input -> memory-> ALU (Arithmetic Logic Unit) -> memory
 Softwares:
     # system soft. (OS) . A small part is stored in ROM. when the pc is turned on this gathers all the remaining OS.
     # Application soft. (All besic soft.)
