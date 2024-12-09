@@ -6,5 +6,48 @@
     User
 
 # Softawares are also called programmes
-# The computer reads all the datas as numbers
-# 
+# The computer reads all the datas as numbers (0's and 1's)
+# Four 0's and 1's can make 2^4 = 16 combinations or different numbers
+# The RAM falls under the category of "memory"
+# Hard disk drive or ssc fall under the category of "Storage"
+# Computers main circuit board is the motherboard
+# SSD > HDD
+                    HDD                      SSD
+    ----------------------------------------------
+    Access time      10                      .1 
+    ----------------------------------------------
+    Read speed      50-100                 200-500
+    ----------------------------------------------
+    power consum.    6                       2-3
+    ----------------------------------------------
+
+# The disk revolves
+# the Actuator arm gets into contact with the moving disk and read the data
+# RAM stores the data temporarily (volatile). The datas disappear when the computer is turned off. 
+# ROM is not volatile. Rom contains the operation system (OS) [3-1 has a OS course]
+# Bit is the smallest unit of data that is stored. 
+1 BYTE = 8 Bits
+     1KB = 1024 BYTE
+# ALU = Airthmetical and Logic unit 
+# input -> memory-> ALU -> memory
+Softwares:
+    # system soft. (OS) . A small part is stored in ROM. when the pc is turned on this gathers all the remaining OS.
+    # Application soft. (All besic soft.)
+    # Malware soft. 
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+Attandance   |  20%
+-------------------
+Online       | 20%
+-------------------
+offline      |  10%
+-------------------
+presentation | 10%
+-------------------
+mid          | 20%
+-------------------
+Lab final    | 20%
