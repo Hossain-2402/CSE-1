@@ -1,1 +1,39 @@
-lec 3
+# variable = memory address/location/container
+# int x;
+    int = data type
+    x = variable name
+# Alpha-numeric = Alphabate and numbers
+# "-" is not allowed in variable name
+# variable name cannot start with a number
+
+#if we give  as input 
+	the computer writes : 00000000 00000101
+
+# integer stores a 16 bit data.
+
+#include<stdio.h>
+int main(){
+	int a=15;b=15;
+	int sum;
+	sum = a+b;
+
+
+
+}
+
+
+# "%d" is a formate specifier .
+
+# Datatype:
+	# character (char) Memory Size : 1B | Format spe: %c
+	# integer (int) Memory Size : 2B/4B/8B | Format spe: %d
+	# floatint point number (float) Memory Size : 4B | Format Spec: %f
+	# double precision floating point number (double) : 8B | Format Spec: %lf
+	# void
+
+Variable:
+	# Local - variable declared inside a function are called L_Var
+	# global - variable declared outside a function are called G_Var
+
+
+# &x -> the location of the x variable;
