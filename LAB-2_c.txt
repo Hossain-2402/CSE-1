@@ -8,3 +8,10 @@
 
 # scanf(" %c,&char) -> Here we need to put a space after the first coatation to have it run perfectly [For character]
 # scanf(" %s,&string) -> Here we need to put a space after the first coatation to have it run perfectly [For string]
+
+# float c = (float) a/b; -> This is called type casting
+
+# % operator prints the remainer of a division operation
+    5%2 -> 1
+    here 2 is quotient
+    and 1 is remainder 
