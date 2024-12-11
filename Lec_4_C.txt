@@ -1,1 +1,25 @@
-#
+# Arithmetic operator:
+    +,-,*,/,%
+# modulus always works on intger value. Because it always returns an integer 
+# Unary operator: "-" Example: a = 5; -a = -5; It is possible to be used in one variable or one operand
+# a = a+b; can be writen as a += b
+# User defined Function:
+  Structure:
+    (return type) (function name) (parameter) {
+        logic;
+        return ;
+    }
+  Example:
+    int add(int a,int b){
+        return a+b;
+    }
+# The parameter variables function as local variable inside the declared function
+# add(5,2) : here 5 and 2 are arguments of the function
+# if we put the user made function under the main function, we need to do protyping .
+    prototyping :
+      #include<stdio.h>
+      int add(int a,int b);
+
+      int main(){
+          ......
+      }
