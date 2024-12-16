@@ -1,0 +1,154 @@
+                                Lec-2
+                                -----
+
+#include<stdio.h>
+int  main(void){
+	printf("welcome");
+	retunr 0;
+}
+
+
+
+---------------------------------------------------------------------------------------------------------
+#include 			= 	directive																		|
+---------------------------------------------------------------------------------------------------------
+stdio.h 			= 	input-output header file 														|
+---------------------------------------------------------------------------------------------------------
+'int' main() 		= 	this is the return type															|
+---------------------------------------------------------------------------------------------------------
+int 'main'() 		= 	funciton name 																	|
+---------------------------------------------------------------------------------------------------------
+int main('void')	= 	parameter																		|
+---------------------------------------------------------------------------------------------------------
+printf				= 	built in 'library function' ( linkers connect this to the header file )			|
+---------------------------------------------------------------------------------------------------------
+retrun 0  			= 	return of the function															|
+---------------------------------------------------------------------------------------------------------
+if end is ';' 		= 	this ';' at end means that the line is a statement (#include is not a statement)|
+---------------------------------------------------------------------------------------------------------
+
+
+
+# C was invented in 1972 By Dennis ritchi
+
+# C is a 'case sensetive' programmeing language (uppercase, lowercase)
+
+# Languages are of 3 types:
+	1. High lvl lang : 
+			COBOL,FORTRAN,Basic
+			made for specific work
+			used in business(COBOL) and math(FORTRAN)
+
+	2.Mid lvl lang :
+			C,C++,JAVA
+
+	3.Low lvl lang : 
+			Assemble
+			requires LARGE code for short work
+
+# The compiler converts the code to 0's and 1's
+
+# The compiler finds the MAIN function and runs that first
+
+# Function is a set of statements
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                    Lec-3
+                                    -----
+
+# variable = memory address/location/container
+# int x;
+    int = data type
+    x = variable name
+# Alpha-numeric = Alphabate and numbers
+# "-" is not allowed in variable name
+# variable name cannot start with a number
+
+#if we give  as input 
+	the computer writes : 00000000 00000101
+
+# integer stores a 16 bit data.
+
+#include<stdio.h>
+int main(){
+	int a=15;b=15;
+	int sum;
+	sum = a+b;
+
+
+
+}
+
+
+# "%d" is a formate specifier .
+
+# Datatype:
+	# character (char) Memory Size : 1B | Format spe: %c
+	# integer (int) Memory Size : 2B/4B/8B | Format spe: %d
+	# floatint point number (float) Memory Size : 4B | Format Spec: %f
+	# double precision floating point number (double) : 8B | Format Spec: %lf
+	# void
+
+Variable:
+	# Local - variable declared inside a function are called L_Var
+	# global - variable declared outside a function are called G_Var
+
+
+# &x -> the location of the x variable;
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                    Lec-4
+                                    -----
+
+# Arithmetic operator:
+    +,-,*,/,%
+# modulus always works on intger value. Because it always returns an integer 
+# Unary operator: "-" Example: a = 5; -a = -5; It is possible to be used in one variable or one operand
+# a = a+b; can be writen as a += b
+# User defined Function:
+  Structure:
+    (return type) (function name) (parameter) {
+        logic;
+        return ;
+    }
+  Example:
+    int add(int a,int b){
+        return a+b;
+    }
+# The parameter variables function as local variable inside the declared function
+# add(5,2) : here 5 and 2 are arguments of the function
+# if we put the user made function under the main function, we need to do protoyping .
+    prototyping :
+      #include<stdio.h>
+      int add(int a,int b);
+
+      int main(){
+          ......
+      }
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                    Lec-5
+                                    -----
+
+
+# if (conditional expression/condition) {
+    statement;  
+  }
+
+# Even or Odd :
+    int main(){
+    
+    	int a;
+    	scanf("%d",&a);
+    	if(a%2 == 0){
+    		printf("This number is an even number\n");
+    	}
+    	else{
+    		printf("This number is an odd number \n");
+    	}
+    	return 0 ;
+    }
+
+# a%2 == 1 : this is an "odd" number
+# 
