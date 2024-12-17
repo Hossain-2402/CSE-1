@@ -174,3 +174,134 @@ int main(){
     return 0;
 
 }
+
+
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                    
+//                                          Lab-3
+//                                          -----    
+
+
+
+
+
+
+#include<stdio.h>
+#include<math.h>
+
+
+int main()
+{
+    int age;
+    scanf("%d", &age);
+
+    if(age<20)
+        printf("You are not Eligible."); // only one statement is valid if we don't use the "{}"
+    else
+        printf("You may proceed");
+---------------------------------------------------------------------------------------------------------
+
+    int age;
+    scanf("%d", &age);
+
+    if(age<20){
+        printf("You are not Eligible.");
+        printf("This line is printed too");// multiple statements are valid if we use the "{}"
+    }
+    else{
+        printf("You may proceed");
+        printf("This line is printed too");
+    }
+---------------------------------------------------------------------------------------------------------
+
+
+    int number ;
+    printf("Enter a random number : ");
+    scanf("%d", &number);
+    if(number%2 == 0){
+        printf("The number is an even number");
+    }
+    else{
+        printf("The number is an odd number");
+    }
+----------------------------------------------------------------------------------------------------------
+    int a, distance;
+    float result;
+    printf("Enter 1(km->mile) or 2(mile->km): ");
+    scanf("%d",&a);
+    if(a != 1 && a!=2)
+    {
+        printf("You have to enter either 1 or 2");
+    }
+    else
+    {
+        printf("Enter the distance : ");
+        scanf("%d",&distance);
+        if(a == 1)
+        {
+            result =  distance/1.61;
+            printf("The result is : %.2f mile", result);
+        }
+        else
+        {
+            result =  distance * 1.61;
+            printf("The result is : %.2f Km", result);
+        }
+    }
+---------------------------------------------------------------------------------------------------------
+    int age;
+    scanf("%d",&age);
+    if(age==20  || age==30){
+        printf("Eligible");
+    }else{
+        printf("Not Eligible");
+    }
+--------------------------------------------------
+
+    char c;
+    printf("Enter a small alphabate : ");
+    scanf(" %c", &c);
+    if( c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u'){
+        printf("This is a vowel");
+    }
+    else{
+        printf("This is a consonent");
+    }
+-------------------------------------------------------------------------------------------------
+    int a=10,b=30,c=20;
+    int max;
+    if(a>b && a>c){
+        max = a;
+    }
+    else if(b>a && b>c){
+        max = b;
+    }
+    else{
+        max = c;
+    }
+    printf("The max is : %d", max);
+-------------------------------------------------------------------------------------------------------
+
+    int ch;
+    printf("Enter a character: ");
+    scanf(" %c",&ch);
+    if(ch>=65 && ch<=92){
+        printf("This is a upper case character\n");
+        printf("The Lower case is :  %c", (ch+32));
+    }
+    else if(ch>=97 && ch<=124){
+        printf("This is a lower case character\n");
+        printf("The upper case is : %c", (ch-32));
+    }
+    else{
+        printf("Invalid character");
+    }
+
+
+}
+
