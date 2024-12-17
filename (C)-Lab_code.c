@@ -290,11 +290,11 @@ int main()
     int ch;
     printf("Enter a character: ");
     scanf(" %c",&ch);
-    if(ch>=65 && ch<=92){
+    if(ch>=65 && ch<=90){
         printf("This is a upper case character\n");
         printf("The Lower case is :  %c", (ch+32));
     }
-    else if(ch>=97 && ch<=124){
+    else if(ch>=97 && ch<=122){
         printf("This is a lower case character\n");
         printf("The upper case is : %c", (ch-32));
     }
