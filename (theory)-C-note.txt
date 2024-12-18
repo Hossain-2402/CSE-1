@@ -158,8 +158,9 @@ Variable:
                                     -----
 # If there are multiple (more thatn 2) conditions to check , we use if,else if,else 
 # if we use else if , then it is not mandatory to add else{} . But the convention is that we add the else{} at the end.
-
-
+# >,<,==,>=,<=,!= : these are called relational operator
+# &&, ||, ! : these are logical operator
+# if(a){...} this is similar to if(a!=0){...}
 
 
 
