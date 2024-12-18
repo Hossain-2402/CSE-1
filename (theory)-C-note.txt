@@ -151,4 +151,15 @@ Variable:
     }
 
 # a%2 == 1 : this is an "odd" number
-# 
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                    Lec-6
+                                    -----
+# If there are multiple (more thatn 2) conditions to check , we use if,else if,else 
+# if we use else if , then it is not mandatory to add else{} . But the convention is that we add the else{} at the end.
+
+
+
+
+
