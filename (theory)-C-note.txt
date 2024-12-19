@@ -170,12 +170,39 @@ Variable:
 
 # (y%400 == 0 for 1800,1900,2000) || (y%4 == 0 && y%100 == 0 for the remaining years)
 # 
-
-
-
-
-
-
-
-
-
+# Largest among a,b,c [using nasted if]
+	
+	#include<math.h>
+	int main(){
+			
+		int a=10,b=8,c=12;
+		int max;
+		if(a>b){
+			if(a>c){
+				max = a;
+			}
+			else{
+				max = c;
+			}
+		}
+		else if(b>c){
+			max = b;
+		}
+		else{
+			max = c;
+		}
+		
+		printf("%d",max);
+	
+		return 0;
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
