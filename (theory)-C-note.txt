@@ -172,7 +172,7 @@ Variable:
 # 
 # Largest among a,b,c [using nasted if]
 	
-	#include<math.h>
+	#include<stdio.h>
 	int main(){
 			
 		int a=10,b=8,c=12;
