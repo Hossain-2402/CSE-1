@@ -206,12 +206,17 @@ Variable:
                                     Lec-8
                                     -----
 
-# 
-
-
-
-
-
+# switch-case:
+        switch(expression){
+             case constant 1:
+                   .....
+                   break;
+              case constant 2:
+                   .....
+                   break;
+              default:
+                   ......
+         }
 
 
 
