@@ -215,11 +215,21 @@ Variable:
                    .....
                    break;
               default:
-                   ......
+            ......
          }
 
-
-
+    Example:
+    --------
+       switch(grade){
+             case 'A':
+                   .....
+                   break;
+              case 'B':
+                   .....
+                   break;
+              default:
+                   ......
+         }
 
 
 
