@@ -302,34 +302,17 @@ int main()
         printf("Invalid character");
     }
 
-
-
 }
 
 
 
------------------------------------------
-#include<stdio.h>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                    
+//                                          Lab-4
+//                                          -----    
 
-int main(){
 
-    int n;
-    printf("Enter a number : ");
-    scanf(" %d", &n);
-    int iter = 1;
-    int space = n;
-    for(int i=1;i<=n;i++){
-        for(int k=space;k>0;k--){
-            printf(" ");
-        }
-        for(int j=1;j<=iter;j++){
-            printf("*");
-        }
-        iter += 2;
-        printf("\n");
-        space --;
-    }
 
-    return 0;
-}
+
+
 
