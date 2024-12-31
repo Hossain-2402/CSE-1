@@ -158,6 +158,55 @@ int main() {
 
 
 
+#include<stdio.h>
+
+int main(){
+
+    char senior;
+    float income;
+    float tax = 0;
+    printf("Are you a Senior citizen (y/n): ");
+    scanf(" %c",&senior);
+
+    printf("Enter your income : ");
+    scanf(" %f",&income);
+
+    if(senior == 'n' || senior == 'N'){
+        if(income <= 250000){
+            tax = 0;
+        }
+        else if( income>250000 && income<=500000){
+            tax = (income-250000)* 5/100;
+        }
+        else if(income>500000 && income<=1000000){
+            tax = 12500+((income-500000)*20/100);
+        }
+        else if(income > 1000000){
+            tax = 112500+((income-1000000)*30/100);
+        }
+    }
+    else{
+        if(income <= 250000){
+            tax = 0;
+        }
+        else if(income>250000 && income<=500000){
+            tax = (income-250000)* 5/100;
+            tax-=50000;
+        }
+        else if(income>500000 && income<=1000000){
+            tax = 12500+((income-500000)*20/100);
+            tax -= 50000;
+        }
+        else if(income > 1000000){
+            tax = 112500+((income-1000000)*30/100);
+            tax -= 50000;
+        }
+    }
+    printf("Taxable income after examption: %.2f\nCalculated tax : %.2f\nRemaining Income after tax deduction: %.2f", income,tax,income-tax);
+
+
+    return 0;
+}
 
 
 
