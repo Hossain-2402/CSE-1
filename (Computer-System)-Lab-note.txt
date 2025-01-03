@@ -186,20 +186,18 @@ int main(){
         }
     }
     else{
+        imcome = income - 50000; // Because 50000 tk er upor kono tax nai
         if(income <= 250000){
             tax = 0;
         }
         else if(income>250000 && income<=500000){
             tax = (income-250000)* 5/100;
-            tax-=50000;
         }
         else if(income>500000 && income<=1000000){
             tax = 12500+((income-500000)*20/100);
-            tax -= 50000;
         }
         else if(income > 1000000){
             tax = 112500+((income-1000000)*30/100);
-            tax -= 50000;
         }
     }
     printf("Taxable income after examption: %.2f\nCalculated tax : %.2f\nRemaining Income after tax deduction: %.2f", income,tax,income-tax);
