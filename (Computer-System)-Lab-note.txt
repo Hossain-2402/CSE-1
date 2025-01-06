@@ -69,6 +69,17 @@ Microsoft word
 HW : merge cells, split cells
 
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                                                                                            LAB-4
+
+Microsoft excel
+# fill series  =  numerically organizes the cell datas 
+# shift+select(mouse[left]) = to select multiple cells
+# shift+select(mouse[left]) -> expand = to get ascending numbers 
+
+
+
 
 
 
