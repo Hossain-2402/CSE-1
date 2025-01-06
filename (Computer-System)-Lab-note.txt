@@ -86,6 +86,9 @@ Microsoft excel
 # Row-wise operation er jonno colum-wise select korte hbe
 # =A2+50 = is a valid operation
 
+# =IF(C2>4,1,0) =  if(c2>4) printf("1"); else printf("0");
+# =COUNTIF((D2:D11),"CSE") = count how many times "CSE" occured between the range
+
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
