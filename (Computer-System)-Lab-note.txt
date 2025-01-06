@@ -74,6 +74,7 @@ HW : merge cells, split cells
                                                                                             LAB-4
 
 Microsoft excel
+---------------
 # fill series  =  numerically organizes the cell datas 
 # shift+select(mouse[left]) = to select multiple cells 
     # mouse(left) long-press = to select multiple cells 
@@ -89,6 +90,13 @@ Microsoft excel
 # =IF(C2>4,1,0) =  if(c2>4) printf("1"); else printf("0");
 # =COUNTIF((D2:D11),"CSE") = counts how many times "CSE" occured between the range
 # =COUNTIF(C2:C11,">3.5") = counts how many values are greater than 3.5
+# =COUNTIFS((D2:D11),"CSE",(C2:C11),"=4") = to check multiple conditions 
+
+# =MIN(4,5)
+# =MAX(4,5)
+
+# =CONCAT(C10,D10) = sets the velue of the cell to (C10+D10) [it does not return the summation rather marges them]
+# =CONCAT(C10,," ",E10) = adds a space in between
 
 
 
