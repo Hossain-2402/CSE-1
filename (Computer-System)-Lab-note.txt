@@ -82,7 +82,7 @@ Microsoft excel
 # =SUM(C2:C11) = To get the summation of cells 
 # =average(C2:C11) = To get the average of cells
 # =count(C2:C11) = To get the count of cells
-# We can set these formulas in the bar that is above the sheet
+# We can set these formulas in the bar that is right above the sheet
 # Row-wise operation er jonno colum-wise select korte hbe
 # =A2+50 = is a valid operation
 
