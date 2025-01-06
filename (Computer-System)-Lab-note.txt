@@ -103,6 +103,8 @@ Microsoft excel
 # =CEILING(F10,1) = if F10 is 56.4 then it will return 57
 # =FLOOR(F10,1) = if F10 is 56.4 then it will return 55
 
+# Sorting and Custom sorting = if the merged cells are not of same size, it would not work
+
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
