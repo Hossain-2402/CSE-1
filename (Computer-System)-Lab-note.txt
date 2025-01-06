@@ -87,7 +87,8 @@ Microsoft excel
 # =A2+50 = is a valid operation
 
 # =IF(C2>4,1,0) =  if(c2>4) printf("1"); else printf("0");
-# =COUNTIF((D2:D11),"CSE") = count how many times "CSE" occured between the range
+# =COUNTIF((D2:D11),"CSE") = counts how many times "CSE" occured between the range
+# =COUNTIF(C2:C11,">3.5") = counts how many values are greater than 3.5
 
 
 
