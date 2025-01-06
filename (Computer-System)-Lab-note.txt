@@ -75,8 +75,13 @@ HW : merge cells, split cells
 
 Microsoft excel
 # fill series  =  numerically organizes the cell datas 
-# shift+select(mouse[left]) = to select multiple cells
+# shift+select(mouse[left]) = to select multiple cells 
+    # mouse(left) long-press = to select multiple cells 
 # shift+select(mouse[left]) -> expand = to get ascending numbers 
+
+# =SUM(C2:C11) = To get the summation of cells
+# =average(C2:C11) = To get the average of cells
+# =count(C2:C11) = To get the count of cells
 
 
 
