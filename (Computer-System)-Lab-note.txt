@@ -92,6 +92,7 @@ Microsoft excel
 # =COUNTIF(C2:C11,">3.5") = counts how many values are greater than 3.5
 # =COUNTIFS((D2:D11),"CSE",(C2:C11),"=4") = to check multiple conditions 
 # =IF(A2=1,"A",(IF(B2="A","4","Don’t know"))) = nasted if 
+    # Grade calculation using nasted if is a "Common question" in Mid/Final
 
 # =MIN(4,5)
 # =MAX(4,5)
