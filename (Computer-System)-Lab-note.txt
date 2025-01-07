@@ -81,6 +81,7 @@ Microsoft excel
 # shift+select(mouse[left]) -> expand = to get ascending numbers 
 
 # =SUM(C2:C11) = To get the summation of cells 
+    # =SUM(C2,C11) = To get the summation of C2 and C11 
 # =average(C2:C11) = To get the average of cells
 # =count(C2:C11) = To get the count of cells
 # We can set these formulas in the bar that is right above the sheet
