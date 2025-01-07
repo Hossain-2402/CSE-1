@@ -382,4 +382,123 @@ int main(){
 //                                          Lab-5
 //                                          -----    
 
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+#include<conio.h>
+
+
+int main(){
+    int n;
+    scanf("%d", &n);
+    for(int i=1;i<=n;i++){
+        printf("%d ",i);
+    }
+---------------------------------------------------------------------------------------------------
+    int i;
+    for(i=0;i<10;i++){
+       printf("%d ",i);
+    }
+    printf("%d", i); // prints the last value of i that we got from the for loop [i.e. i=10]
+---------------------------------------------------------------------------------------------------
+    for(int i=1,j=10;i<=10,j>=1;i++,j--){
+        printf("%d -> %d \n",i,j);
+    }
+---------------------------------------------------------------------------------------------------
+    for(int i=1;i<=10;){
+        printf("%d ", ++i);
+    }
+    printf("\n");
+    for(int i=1;i<=10;){
+        printf("%d ", i++);
+    }
+---------------------------------------------------------------------------------------------------
+    int i,j,search;
+    printf("Enter value 100 \n");
+
+    for( ; ; ){
+        scanf("%d",&search);
+        if(search == 100){
+            printf("Done!");
+            break;
+        }
+        else{
+            printf("Wrong input\n");
+        }
+    }
+---------------------------------------------------------------------------------------------------
+    srand(time(NULL)); //changes the seed // to write this line we need to import the '#include<time.h>'
+    int random_number = rand();
+
+    printf("Random number : %d\n",random_number);
+
+
+    srand(time(NULL)); //changes the seed // requires the 'time header file'
+    int random_number_between_1_100 = rand()%100 + 1;
+
+    printf("Random number : %d\n",random_number);
+---------------------------------------------------------------------------------------------------
+    srand(time(NULL));
+    int random = rand()%10+1;
+    printf("%d\n", random);
+
+    printf("Enter a value between 1-10: ");
+    for( ; ; ){
+        int n;
+        scanf("%d",&n);
+        if(n == random) break;
+        else if(n>random) printf("Enter a lower number ");
+        else printf("Enter a higher number ");
+    }
+    printf("You guessed it right");
+---------------------------------------------------------------------------------------------------
+    int number;
+    scanf("%d",&number);
+    int sum;
+    for(int i=number;i!=0;i/=10){
+        sum += i%10;
+    }
+    printf("%d",sum);
+---------------------------------------------------------------------------------------------------
+    int n=30;
+    for(int i=1;i<=n;i++){
+        if(i%3 == 0){
+            continue;
+        }
+        printf("%d",i);
+    }
+---------------------------------------------------------------------------------------------------
+    int count = 0;
+    for( ; ; ){
+        char ch;
+        getchar();
+        scanf(" %c",&ch);
+        if(ch != 'a' || ch != 'e' || ch != 'i' || ch != 'o' || ch != 'u'){
+           continue;
+        }
+        count ++;
+        if(count == 10){
+            printf("You have entered 10 characters");
+            break;
+        }
+    }
+---------------------------------------------------------------------------------------------------
+    int n = 5;
+    int is_prime = 1;
+    for(int i=2;i<n;i++){
+        if(n%i == 0){
+            is_prime = 0;
+            break;
+        }
+    }
+    if(is_prime == 1) printf(" The number is a prime number ");
+    else printf(" The number is not a prime number ");
+
+return 0;
+}
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                    
+//                                          Lab-6
+//                                          -----    
 
