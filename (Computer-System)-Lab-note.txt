@@ -89,11 +89,11 @@ Microsoft excel
 # =A2+50 = is a valid operation
 
 # =IF(C2>4,1,0) =  if(c2>4) printf("1"); else printf("0");
-# =COUNTIF((D2:D11),"CSE") = counts how many times "CSE" occured between the range
-# =COUNTIF(C2:C11,">3.5") = counts how many values are greater than 3.5
-# =COUNTIFS((D2:D11),"CSE",(C2:C11),"=4") = to check multiple conditions 
 # =IF(A2=1,"A",(IF(B2="A","4","Don’t know"))) = nasted if 
     # Grade calculation using nasted if is a "Common question" in Mid/Final
+# =COUNTIF((D2:D11),"CSE") = counts how many times "CSE" occured between the range
+# =COUNTIF(C2:C11,">3.5") = counts how many values are greater than 3.5
+# =COUNTIFS((D2:D11),"CSE",(C2:C11),"=4") = to check multiple conditions
 
 # =MIN(4,5)
 # =MAX(4,5)
