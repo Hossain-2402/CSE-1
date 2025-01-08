@@ -290,8 +290,47 @@ for(int i=0;i<=5;i++){
 	}
 
 
-	
-		
-		
-		
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                    Lec-10
+                                    -----
+
+# while(condition){
+	.....
+ }
+ Application: 
+	 int i=0;
+	 while(i<10){
+		printf("%d\n",i);
+		i++;
+	 }
+
+# Guessing game : 
+	  int n,flag = 0;
+	  printf("Enter 5+7:");
+	  while(flag == 0){
+		scanf("%d",&n);
+		if(n==12) flag = 1;
+		else printf("Try again :");
+	  }
+	  printf("Success");
+
+# Infinite loop :
+	while(1){
+		printf("infinitel lopp");
+	}
+	for( ; ; ){
+		printf("infinite loop");
+	}
+
+# guessing game without break:
+	int n,flag = 0,try = 3;
+	printf("Enter 5+7= ");
+	while(flag == 0 && try>0){
+		scanf("%d",&n);
+		if(n == 12) flag = 1;
+		else{
+			printf("Try again: ");
+			try --;
+		}
+	}
 	
