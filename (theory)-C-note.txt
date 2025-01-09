@@ -338,3 +338,45 @@ for(int i=0;i<=5;i++){
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                                     Lec-11
                                     ------
+# Getting the digit from an integer:
+	int number = 123;
+	int last_digit = number%10 // this is the last digit [i.e 3]
+	int first_two_digits = number/10 // this is the first 2 digit number [i.e 12]
+
+	code :
+	-----	
+	int number = 123;
+	int sum = 0;
+	while(number != 0){
+		int remainder = number%10;
+		sum += remainder;
+		number /= 10;
+	}
+	printf("The summation is : %d",sum);
+
+# do-while :
+	do{
+		...
+	}while(condition);
+	Application :
+	-----------
+	int number = 1;
+	do{
+		number += 1;
+	}while(number<5);
+
+# do-while runs atleast ones even if the condition is not true. But other loops might not run if the condition is not true.
+# while(...) inside the '()' we cannot initialize a new variable. Because here we write a condition.
+
+# guessing game :
+	printf("Enter 5+7 : ");
+	do{
+		int n;
+		scanf("%d", &n);
+		if(n == 12) break;
+		else printf("Wrong answer. Enter again : ");
+	}while(1);
+	printf("Great");
+
+
+
