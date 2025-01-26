@@ -101,7 +101,7 @@ Microsoft excel
 # =CONCAT(C10,D10) = sets the velue of the cell to (C10+D10) [it does not return the summation rather marges them]
 # =CONCAT(C10,," ",E10) = adds a space in between
 
-# =CEILING(F10,1) = if F10 is 56.4 then it will return 57
+# =CEILING(F10,2) = if F10 is 56.4 then it will return 58. BECAUSE , the nearing number after 56 which is 2's multiple is 58.
 # =FLOOR(F10,1) = if F10 is 56.4 then it will return 55
 
 # Sorting and Custom sorting = if the merged cells are not of same size, it would not work
