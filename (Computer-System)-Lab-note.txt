@@ -75,37 +75,37 @@ HW : merge cells, split cells
 
 Microsoft excel
 ---------------
-# fill series  =  numerically organizes the cell datas 
 # shift+select(mouse[left]) = to select multiple cells 
     # mouse(left) long-press = to select multiple cells 
 # shift+select(mouse[left]) -> expand = to get ascending numbers 
+    -> fill series  =  numerically organizes the cell datas 
 
-# =SUM(C2:C11) = To get the summation of cells 
+# =SUM(C2:C11) = To get the summation of cells [from C2 to C11] 
     # =SUM(C2,C11) = To get the summation of C2 and C11 
-# =average(C2:C11) = To get the average of cells
-# =count(C2:C11) = To get the count of cells
-# We can set these formulas in the bar that is right above the sheet
-# Row-wise operation er jonno colum-wise select korte hbe
-# =A2+50 = is a valid operation
+# =average(C2:C11) = To get the average of cells [from C2 to C11]
+# =count(C2:C11) = To get the count of cells [from C2 to C11]
+# We can set these formulas in the bar that is right above the "sheet"
+# Row-wise operation er jonno colum-wise select korte hbe ( I am a bit confused about this, so you may skip this line)
+# =A2+50 = is a valid operation. [it adds 50 to the value of the cell A2]
 
 # =IF(C2>4,1,0) =  if(c2>4) printf("1"); else printf("0");
 # =IF(A2=1,"A",(IF(B2="A","4","Don’t know"))) = nasted if 
     # Grade calculation using nasted if is a "Common question" in Mid/Final
 # =COUNTIF((D2:D11),"CSE") = counts how many times "CSE" occured between the range
     # =COUNTIF(C2:C11,">3.5") = counts how many values are greater than 3.5
-# =COUNTIFS((D2:D11),"CSE",(C2:C11),"=4") = to check multiple conditions
+# =COUNTIFS((D2:D11),"CSE",(C2:C11),"4") = to check multiple conditions
 
-# =MIN(4,5)
-# =MAX(4,5)
+# =MIN(4,5)  = returns 4
+# =MAX(4,5)  = returns 5
 
-# =CONCAT(C10,D10) = sets the velue of the cell to (C10+D10) [it does not return the summation rather marges them]
-# =CONCAT(C10,," ",E10) = adds a space in between
+# =CONCAT(C10,D10) = sets the velue of the cell to (C10+D10) [it does not return the "summation" rather "merges" them]
+# =CONCAT(C10," ",E10) = adds a space in between 
 
-# =CEILING(F10,2) = if F10 is 56.4 then it will return 58. BECAUSE , the nearing number after 56 which is 2's multiple is 58.
-# =FLOOR(F10,1) = if F10 is 56.4 then it will return 55
+# =CEILING(F10,2) = if F10 is 56.4 then it will return 58. BECAUSE , the nearest number after 56.4 which is 2's multiple is 58.
+# =FLOOR(F10,2) = if F10 is 56.4 then it will return 56. BECAUSE , the nearest number before 56.4 which is 2's multiple is 56.
 
-# Sorting and Custom sorting = if the merged cells are not of same size, it would not work
-
+# Sorting and Custom sorting = if the merged cells are not of same size, it will not work
+# Adding Colum/Row =  select the entire colum/row,right click on the mouse. Then select "insert" (dropdown appears that shows multiple options)
 # Conditional Formating = highlights according to condition 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
