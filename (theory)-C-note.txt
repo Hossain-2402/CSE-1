@@ -392,8 +392,75 @@ for(int i=0;i<=5;i++){
                                     Lec-15
                                     ------
 
-#
+# Array
+    Definition: An array is a collection of elements of the same data type stored in a contigious memory location.
+	int mark; // normal variable
+	int marks[5]; // collection of 5 normal variables
+	"int" = data type
+	"mark" = array name
+	"5" = number of items
 
+	memory address : 0x1100,0x1103,0x1106,0x1109,0x11C - serial wise allocation
+	
+	marks[0] -- 1000-1003 bytes
+	marks[1] -- 1004-1007 bytes
+	marks[2] -- 1008-1011 bytes
+	marks[3] -- 1012-1015 bytes
+	marks[4] -- 1016-1019 bytes
+
+# General syntax :
+	data_type array_name[size];
+# Application :
+	int marks[5];
+# Indexing :
+	the 1st element of the array is in the 0th index. 
+
+	element		index
+	  1st		  0
+	  2nd		  1
+	  3rd		  2
+	  4th		  3
+	  5th		  4
+
+# Value initialization : 
+	# 1 : int marks[5] = {1,2,3,4,5};
+	# 2 : 
+		int marks[5];
+		marks[0] = 1;  // 1st mark
+		marks[1] = 2;  // 2nd mark
+		marks[2] = 3;  // 3rd mark
+		marks[3] = 4;  // 4th mark
+		marks[4] = 5;  // 5th mark
+	# 3 :
+		int marks[5] = {}; // mark = {0,0,0,0,0}
+	# 4 :
+		int marks[] = {1,2,3}; // make an array of size 3
+		
+		
+
+
+# Printing individual array value : 
+	int marks[5] = {1,2,3,4,5};
+	printf("%d", mark[1]); // prints 2. This is the 2nd item of the array
+	printf("%d, %d", mark[0],mark[1]); // prints 1, 2. 
+
+# Printing all the values of array:
+	int marks[5] = {1,2,3,4,5};
+
+	for(int i=0;i<5;i++){
+		printf("%d", mark[i]);
+	}
+
+# Summation of all the values : 
+	int marks[5] = {1,2,3,4,5};
+	int sum = 0;
+	for(int i=0;i<5;i++){
+		sum += marks[i];
+	}
+
+	printf("%d",sum);
+
+# XOR operator : ^
 
 
 
