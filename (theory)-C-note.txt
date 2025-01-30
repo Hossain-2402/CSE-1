@@ -468,7 +468,7 @@ for(int i=0;i<=5;i++){
                                     ------
 
 # Finding the maximum value of an array:
-	int arr[5] = {4,3,5,1,2};
+	int arr[5] = {5,4,3,2,1};
 	int max = arr[0];
 	for(int i=0;i<5;i++){
 		if(arr[i]>max){
@@ -477,10 +477,42 @@ for(int i=0;i<=5;i++){
 	}
 	printf("%d",max);
 
-# 
+# Getting values from user as input : 
+	int arr[5];
+	printf("Enter the array values : ");
+	for(int i=0;i<5;i++){
+		scanf(%d".&arr[i]);
+	}
 
+# Sorting (Bubble sort) :
+	int arr[5] = {4,6,5,1,2};
+	for(int i=0;i<5;i++){
+		for(int j=0;j<4-i;j++){
+			if(arr[j]>arr[j+1]){
+				int temp = arr[j];
+				arr[j] = arr[j+1];
+				arr[j+1] = temp;
+			}
+		}
+	}
 
-
+# Simulation of the Buble sort :
+	i = 0;
+		j = 0; 5,4,3,2,1 -> 4,5,3,2,1
+		j = 1; 4,5,3,2,1 -> 4,3,5,2,1
+		j = 2; 4,3,5,2,1 -> 4,3,2,5,1
+		j = 3; 4,3,2,5,1 -> 4,3,2,1,5
+	
+	i = 1;
+		j = 0; 4,3,2,1,5 -> 3,4,2,1,5
+		j = 1; 3,4,2,1,5 -> 3,2,4,1,5
+		j = 2; 3,2,4,1,5 -> 3,2,1,4,5
+	i = 2;
+		j = 0; 3,2,1,4,5 -> 2,3,1,4,5
+		j = 1; 2,3,1,4,5 -> 2,1,3,4,5
+	i = 3;
+		j = 0; 2,1,3,4,5 -> 1,2,3,4,5
+	
 
 
 
