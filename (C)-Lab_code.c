@@ -501,4 +501,182 @@ return 0;
                                     
 //                                          Lab-6
 //                                          -----    
+#include<stdio.h>
+
+void heroMove(int speed,char c, double d){
+    printf("The hero is moving at %d m/s\n",speed);
+    return ;
+
+}
+void enemyMove(){
+    printf("The enemy is moving\n");
+    return ;
+
+}
+int add (int a,int b){
+    return a+b;
+}
+int sub(int a,int b){
+    return a-b;
+}
+int mult(int a,int b){
+    return a*b;
+}
+float div(int a,int b){
+    if(a == 0 || b == 0){
+        return 0;
+    }
+    return (float) a/b;
+}
+int main(){
+
+    for(int i=1;i<=3;i++){
+        for(int j=1;j<=4;j++){
+            printf("%d -> %d | ",i,j);
+        }
+        printf("\n");
+    }
+--------------------------------------------------------------------------------------------------------------------------------
+
+    int row,colum;
+    scanf("%d %d",&row,&colum);
+
+    for(int i=1;i<=row;i++){
+        for(int j=1;j<=colum;j++){
+            printf("%d->%d|",i,j);
+        }
+        printf("\n");
+    }
+--------------------------------------------------------------------------------------------------------------------------------
+
+    int row,colum;
+    printf("Enter row & column number : ");
+    scanf("%d %d",&row,&colum);
+    int counter = 1;
+    for(int i=1;i<=row;i++){
+        for(int j=1;j<=colum;j++){
+            printf("%d ",counter);
+            counter ++;
+        }
+        printf("\n");
+    }
+--------------------------------------------------------------------------------------------------------------------------------
+
+    int row,colum;
+    printf("Enter row & column number : ");
+    scanf("%d %d",&row,&colum);
+    int counter = 1;
+    for(int i=1;i<=row;i++){
+        for(int j=1;j<=colum;j++){
+            printf("%d ",counter);
+        }
+        printf("\n");
+        counter ++;
+    }
+--------------------------------------------------------------------------------------------------------------------------------
+
+    int row,colum;
+    printf("Enter row & column number : ");
+    scanf("%d %d",&row,&colum);
+    for(int i=1;i<=row;i++){
+        for(int j=1;j<=colum;j++){
+            printf("%d ",j);
+        }
+        printf("\n");
+    }
+--------------------------------------------------------------------------------------------------------------------------------
+
+    int row,colum;
+    printf("Enter row & column number : ");
+    scanf("%d %d",&row,&colum);
+    char counter = 'A';
+    for(int i=1;i<=row;i++){
+        for(int j=1;j<=colum;j++){
+            printf("%c ",counter);
+            counter ++;
+        }
+        printf("\n");
+    }
+--------------------------------------------------------------------------------------------------------------------------------
+
+    int row,colum;
+    printf("Enter row & column number : ");
+    scanf("%d %d",&row,&colum);
+    for(int i=1;i<=row;i++){
+        for(int j=1;j<=colum;j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+--------------------------------------------------------------------------------------------------------------------------------
+
+    int row,colum;
+    printf("Enter row & column number : ");
+    scanf("%d %d",&row,&colum);
+    for(int i=1;i<=row;i++){
+        for(int j=1;j<=colum;j++){
+            (i==1 || i==row || j==1 || j==colum) ? printf("*") : printf(" ");
+        }
+        printf("\n");
+    }
+--------------------------------------------------------------------------------------------------------------------------------
+
+    int row,colum;
+    printf("Enter row & column number : ");
+    scanf("%d %d",&row,&colum);
+    for(int i=1;i<=row;i++){
+        for(int j=1;j<=i;j++){
+            printf("*");
+        }
+        printf("\n");
+    }
+--------------------------------------------------------------------------------------------------------------------------------
+
+    int row;
+    printf("Enter row : ");
+    scanf("%d",&row);
+    for(int i=1;i<=row;i++){
+        for(int j=row-i+1;j>=1;j--){
+            printf("*");
+        }
+        printf("\n");
+    }
+--------------------------------------------------------------------------------------------------------------------------------
+ FUNCTION:
+    heroMove();
+    printf("Welcome to the main function\n");
+    heroMove();
+    heroMove();
+--------------------------------------------------------------------------------------------------------------------------------
+
+    heroMove();
+    printf("Welcome to the main function\n");
+    heroMove();
+    enemyMove();
+    heroMove();
+--------------------------------------------------------------------------------------------------------------------------------
+
+    heroMove(10);
+    printf("Welcome to the main function\n");
+    heroMove(10);
+    enemyMove();
+    heroMove(20);
+--------------------------------------------------------------------------------------------------------------------------------
+
+    heroMove(10,'Z',5.5);
+    printf("Welcome to the main function\n");
+    heroMove(10);
+    enemyMove();
+    heroMove(20);
+--------------------------------------------------------------------------------------------------------------------------------
+
+    int result = add(10,5);
+    printf("The result is : %d\n",result);
+--------------------------------------------------------------------------------------------------------------------------------
+
+    int result = add(10,5);
+    printf("The result is : %d\n The subtraction is : %d\n The multiplication is : %d\n The division is : %.2f\n",add(10,5),sub(10,5),mult(10,5),div(10,5));
+--------------------------------------------------------------------------------------------------------------------------------
+
+}
 
