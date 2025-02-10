@@ -113,6 +113,30 @@ Microsoft excel
                                                                                             LAB-5
 
 
+# Browser : 
+
+
+# The URL is written on the top most serch area
+# To get the specifics 'words' which are searched, we need to put the keyword inside quotion marks
+# Or operation : "cookies OR biscuit recipe"
+# Minus operator : "cookies recipe -chocolate" [returns the links that have cookie without chocolate in it]
+# Click on "Tools" and then chick on "Advanced search" [To search more precisely]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
