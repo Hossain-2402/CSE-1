@@ -685,7 +685,6 @@ int main(){
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                                     
 //                                          Lab-7
-
 #include<stdio.h>
 
 int is_prime(int n){
@@ -736,6 +735,51 @@ int main(){
     for(int i=0;i<n;i++) scanf("%d", &arr[i]);
     for(int i=0;i<n;i++) printf("%d ", arr[i]);
 --------------------------------------------------------------------------------------------------------------------------------
+
+    int arr[5] = {4,1,2,3,5};
+
+    int max = arr[0];
+    for(int i=0;i<5;i++){
+        if(arr[i] > max) max = arr[i];
+    }
+    printf("%d", max);
+--------------------------------------------------------------------------------------------------------------------------------
+
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++){
+        scanf("%d",&arr[i]);
+    }
+
+    int k;
+    scanf("%d",&k);
+
+    int min = arr[0];
+    for(int i=0;i<n;i++){
+        if(arr[i]<min) min = arr[i];
+    }
+
+
+    int max;
+    for(int j=1;j<=k;j++){
+        int current_max = arr[0];
+        int index = 0;
+        for(int i=0;i<5;i++){
+            if(arr[i]>current_max){
+              current_max = arr[i];
+              index = i;
+            }
+        }
+        arr[index] = min;
+        max = current_max;
+    }
+
+    printf("%d",max);
+
+
+}
+
 
 
 
