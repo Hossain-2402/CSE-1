@@ -680,3 +680,66 @@ int main(){
 
 }
 
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                    
+//                                          Lab-7
+
+#include<stdio.h>
+
+int is_prime(int n){
+    for(int i=2;i<n;i++){
+        if(n%i == 0){
+            return 0;
+        }
+    }
+    return 1;
+}
+
+void prime_numbers(int n){
+    for(int i=1;i<n;i++){
+        int is_prime = 1;
+        if(i==1){
+            is_prime = 0;
+        }
+        if(i == 2){
+            printf("%d ",i);
+            continue;
+        }
+        for(int j=2;j<i;j++){
+            if(i%j == 0){
+                is_prime = 0;
+                break;
+            }
+        }
+        if(is_prime == 1){
+            printf("%d ",i);
+        }
+
+    }
+}
+
+
+int main(){
+
+    int n;
+    scanf("%d",&n);
+    int result = is_prime(n);
+    (result == 1)? printf("Prime") : printf("Not Prime");
+    prime_numbers(n);
+--------------------------------------------------------------------------------------------------------------------------------
+
+    int n;
+    scanf("%d",&n);
+    int arr[n];
+    for(int i=0;i<n;i++) scanf("%d", &arr[i]);
+    for(int i=0;i<n;i++) printf("%d ", arr[i]);
+--------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+}
