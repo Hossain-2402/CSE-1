@@ -697,6 +697,69 @@ for(int i=0;i<=5;i++){
 
 
 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                    Lec-18
+                                    ------
+
+
+
+# String :
+        A set of characters terminated by a NULL
+        NULL character = '\O'
+
+# Initialization :
+    char str[20] = {'H','I'}; // This is an array of a character. [Not String]
+    char str[20] = {'H','I','\0'}; // This is a "string"
+
+    char str[20] = "HI"; // Another way declare a string 
+
+# Memory :
+    ------
+   |H|I|\0|
+    ------
+
+# printing the string :
+
+    char str[20] = {'H','I','\0'}; 
+
+    int i=0;
+    while(str[i] != '\0'){
+        printf("%c",str[i]);
+        i++;
+    }
+
+# printing the string :
+
+    char str[20] = {'H','I','\0'}; 
+    printf("%s",str);
+
+
+# getting the string as an input :
+
+    char str[20];
+
+    scanf("%s",str); // We don't put '&' sign here.
+
+# scanf function does not handle space or " " .
+# Hence we use gets(str);
+
+# Getting string with space in it :
+    char str[20];
+    gets(str);
+    printf("%s",str);
+
+    or we can use,
+
+    fgets(str); // This restricts the size of the string
+    printf("%s",str);
+
+# getchar() is a library function
+
+# getche() is not a library function
+    to use it, we need to write:" #include<conio.h>" on top
+
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                                     Rough
                                     ------
