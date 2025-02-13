@@ -699,7 +699,7 @@ for(int i=0;i<=5;i++){
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                                    Lec-18
+                                    Lec-19
                                     ------
 
 
@@ -758,6 +758,149 @@ for(int i=0;i<=5;i++){
 
 # getche() is not a library function
     to use it, we need to write:" #include<conio.h>" on top
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                    Lec-20
+                                    ------
+
+
+
+
+#  Printing a string : 
+    char str[] = "Welcome";
+
+    printf(str);
+    puts(str); // another way to  print a string
+
+# Getting the length of the string :
+    char str[] = "Welcome";
+
+    int i=0;
+    while(str[i] != '\0'){
+        i ++;
+    }
+    printf("Length : %d", i);
+
+# Getting the length of the string :
+    char str[] = "welcome";
+
+    int length = strlen(str);
+
+    printf("Length L : %d",length); // requires "#include<string.h>" on top
+
+# Copy a string :
+    char str[20] = "welcome";
+    char dest[20];
+
+    strcpy(dest,src); // requires "#include<string.h>" on top
+
+    // then dest becoms "here".
+    // similar to dest = str
+
+    printf(dest);
+
+# Mergin to strings :
+    char s1[20] = "Welcome";
+    char s2[20] = " here";
+
+    strcat(s1,s2); // requires "#include<string.h>" on top
+
+    // Then, s1 becomes "Welcome here"
+    // s2 remains " here"
+
+# Do the above thing without using library function 
+
+# Comparing 2 strings :
+
+    char s1[20] = "Name";
+    char s2[20] = "name";
+
+    int result = strcmp(s1,s2); // requires "#include<string.h>" on top
+
+    if(result == 0){
+        printf("Same");
+    }else{
+        printf("Not same");
+    }
+
+    printf("\n %d",result); // see the value of result to understand the logics given below
+
+    //Conditiongs : 
+        // 1. return 0 if s1 == s2
+        // 2. return <0 if s1<s2 (dictionary order)
+        // 3 return >0 if s1>s2 (dictionary order)
+
+# Storing multiple strings : 
+
+    char animals[5][20] = {
+        "Cow",
+        "dog",
+        "cat",
+        "tier",
+        "lion"
+    };
+
+    char test[20] = "cat";
+
+    int flag = 1;
+
+    // The loop below goes throught each element of animals array
+
+    for(int i=0;i<5;i++){
+        int result = strcmp(animals[i],test); // compares each item with the test variable
+        if(result == 0){
+            flag = 0; // flag = 0 means the animal is found
+            break;
+        }
+    }
+
+    if(flag == 0){
+        printf("%s exists",test);
+    }
+    else{
+        printf("%s does not exist",test);
+    }
+
+
+
+# Storing multiple strings (change the for loop condition): 
+
+    char animals[5][20] = {
+        "Cow",
+        "dog",
+        "cat",
+        "tier",
+        "lion",
+        " "
+    };
+
+    char test[20] = "cat";
+
+    int flag = 1;
+
+    // The loop below goes throught each element of animals array
+
+    for(int i=0;i<animals[i] != '\0';i++){
+        int result = strcmp(animals[i],test); // compares each item with the test variable
+        if(result == 0){
+            flag = 0; // flag = 0 means the animal is found
+            break;
+        }
+    }
+
+    if(flag == 0){
+        printf("%s exists",test);
+    }
+    else{
+        printf("%s does not exist",test);
+    }
+
+
+
+
+
+
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
