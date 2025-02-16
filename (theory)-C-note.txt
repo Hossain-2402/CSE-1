@@ -904,6 +904,130 @@ for(int i=0;i<=5;i++){
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                    Lec-21
+                                    ------
+
+
+
+
+# Benifits of using function :
+
+	1.code re-useablity
+	2.break down of a programme into a smaller parts
+	3.reduces repetation of code
+	4.readablity
+
+
+# Function types :
+
+	1.Standard library funciton
+	2.User defined function 
+
+# atoi function:
+	//converts string to an integer
+
+	   int val;
+	   char *str; 
+	   str = "1509.10E";
+	   val = atoi(str); 
+	   printf("integral number = %d", val); // This code prints : 1509
+
+
+	   ------  ------
+	 | output | 1509 |
+	   ------  ------
+
+
+# Structure of a funcition : 
+	   int add(int add,int b); //  Function decraration
+
+	   int mian(){
+		   	int a = 5, b = 10;
+		   	int result = add(a,b); // Function call
+		   	printf("%d", result);
+
+		   	return 0;
+	   }
+
+
+	   // Funciton definition
+	   int add(int a,int b){
+	   		return a+b;
+	   }
+
+# try to run it :
+	   int add(int a, int b){
+	   		printf("Nothing");
+	   }
+
+	   int main(){
+	   	int result = add(5,10);
+	   	printf("%d",result);
+	   }
+
+	   ------  ------
+	 | output |   1  |  
+	   ------  ------
+
+# Funciton Call by value:
+	   void modify(int x){
+	   		x += 10;
+	   		printf("inside the funciton x = %d\n", x);
+	   }
+
+	   int main(){
+	   		int x = 10;
+	   		modify(x);
+	   		printf("outside the funciton x = %d\n", x);	 // Output : 10 (unchanged)
+	   }
+
+
+
+# Funciton Call by reference:
+
+	   void modify(int *x){
+	   		*x += 10;
+	   		printf("inside the funciton x = %d\n", *x);
+	   }
+
+	   int main(){
+	   		int x = 10;
+	   		modify(&x);
+	   		printf("outside the funciton x = %d\n", x);	 // Output : 20 (changed)
+	   }
+
+# Recursive function (Alternating to loop):
+
+	   void fn();
+
+	   int main(){
+	   		fn();
+	   }
+
+	   void fn(){
+	   		fn();
+	   }
+
+	   // Here the function "fn" 
+
+	   
+# Unique way of getting Function parameters : (This thing was inclomplete in the class)
+
+	   int sum(int a,...);
+
+	   int main(){
+	   		int result = sum(5,10);
+	   		return 0;
+	   }
+
+	   int sum(int a,int b, int c){
+	   		return a+b;
+	   }
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                                     Rough
                                     ------
 
