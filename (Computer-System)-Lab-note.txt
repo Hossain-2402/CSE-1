@@ -1,3 +1,10 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                                                                                            LAB-1 
+
+
+
+
 # A computer can convert 'data' into 'information' that is useful to people 
 # Computer parts:
     Hardware 
@@ -143,9 +150,13 @@ Email writing :
         3. A body of one to several paragraphs
         4. A closing (Thank you for your time,Yours,"Sincerely",Have a nice day!)
         5. Your name
-            # add some additional information about yourself 
+            # add some additional information about yourself
 
-        
+    # Go to settings > See all settings > Signature
+
+    # CC = Carbon copy [everyone gets to know who receieves the mails]
+
+    # BCC = Blind Carbon copy [no one gets to know who receieves the mails]
 
     
 
