@@ -162,8 +162,9 @@ Email writing :
 
 CV writing : 
 
-    Resume : Short
-    CV     : Long
+    # Differences between CV & Resume
+        Resume : Short
+        CV     : Long
 
     # Ideal length :
         Resume : 1-2 pages
@@ -239,92 +240,6 @@ CV writing :
 
 
 
-
-
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-#include<stdio.h>
-
-int main(){
-
-    char senior;
-    float income;
-    float tax = 0;
-    printf("Are you a Senior citizen (y/n): ");
-    scanf(" %c",&senior);
-
-    printf("Enter your income : ");
-    scanf(" %f",&income);
-
-    if(senior == 'n' || senior == 'N'){
-        if(income <= 250000){
-            tax = 0;
-        }
-        else if( income>250000 && income<=500000){
-            tax = (income-250000)* 5/100;
-        }
-        else if(income>500000 && income<=1000000){
-            tax = 12500+((income-500000)*20/100);
-        }
-        else if(income > 1000000){
-            tax = 112500+((income-1000000)*30/100);
-        }
-    }
-    else{
-        imcome = income - 50000; // Because 50000 tk er upor kono tax nai
-        if(income <= 250000){
-            tax = 0;
-        }
-        else if(income>250000 && income<=500000){
-            tax = (income-250000)* 5/100;
-        }
-        else if(income>500000 && income<=1000000){
-            tax = 12500+((income-500000)*20/100);
-        }
-        else if(income > 1000000){
-            tax = 112500+((income-1000000)*30/100);
-        }
-    }
-    printf("Taxable income after examption: %.2f\nCalculated tax : %.2f\nRemaining Income after tax deduction: %.2f", income,tax,income-tax);
-
-
-    return 0;
-}
-
-Array problem : 1
-------------------
-#include<stdio.h>
-
-int main(){
-
-    int list[5] = {1,2,3,4,5};
-
-
-    int current_position = 5;
-
-    int number,position;
-    printf("Enter a number : ");
-    scanf("%d",&number);
-    printf("Enter the position : ");
-    scanf("%d",&position);
-    if(position<=0) return 0;
-    position --;
-
-    while(current_position>position){
-        list[current_position] = list[current_position-1];
-        current_position --;
-    }
-
-    list[current_position] = number;
-    printf("\n");
-    for(int i=0;i<6;i++){
-        printf("%d ",list[i]);
-    }
-
-return 0;
-}
 
 
 
