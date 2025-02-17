@@ -130,6 +130,28 @@ PowerPoint :
 
 
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+                                                                                            LAB-6
+
+Email writing : 
+
+    # Structure : 
+        1. A helpful subject line
+        2. Greeting (Dear X,Dear sir/maam,Good morning) [Never use 'Hi' in a formal email]
+            # Then start with : I hope you are well / Hope this mail finds you well
+        3. A body of one to several paragraphs
+        4. A closing (Thank you for your time,Yours,"Sincerely",Have a nice day!)
+        5. Your name
+            # add some additional information about yourself 
+
+        
+
+    
+
+
+
+
 
 
 
