@@ -180,9 +180,55 @@ CV writing :
         8. Achievements / Honors
         9. Courses / Trainings
         10. Referances
+
+
+    # Example template : 
+
+                                                                                                  [Name]
+                                                                                                [Location]                                                             [Image]
+                                                                                             [Number , email]
+
+
+        Education : 
+            PhD                                          (2022-2024)
+            MSc                                          (2020-2022)
+                University name
+            BSc                                          (2018-2020)
+                University name
+            HSC                                          (2016-2018)
+                College name
+            SSC                                          (2005-2015)
+                School name
+
+        Experience :       
+            . Bullet point
+                > Descrption , Responsibility
+            . Bullet point
+                > Descrption , Responsibility  
+            . Bullet point
+                > Descrption , Responsibility 
+
+        Projects :       
+            . Bullet point  ----------------------------- [Duration]
+                > Descrption , Github link
+            . Bullet point  ----------------------------- [Duration]
+                > Descrption , Github link  
+            . Bullet point  ----------------------------- [Duration]
+                > Descrption , Github link 
+
+
+        Skills : 
+
+        Achievement : 
+
+        Courses :     (optional)
+
+        References :  (optional)
+
+
+        
     
-
-
+        
 
 
 
