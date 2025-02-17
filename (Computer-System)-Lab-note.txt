@@ -152,16 +152,35 @@ Email writing :
         5. Your name
             # add some additional information about yourself
 
-    # Go to settings > See all settings > Signature
+    # Go to: Settings > See all settings > Signature
 
-    # CC = Carbon copy [everyone gets to know who receieves the mails]
+    # CC = Carbon copy [everyone gets to know who else are receiving the mail]
 
     # BCC = Blind Carbon copy [no one gets to know who receieves the mails]
 
     
 
+CV writing : 
 
+    Resume : Short
+    CV     : Long
 
+    # Ideal length :
+        Resume : 1-2 pages
+        Cv     : No restrictions
+
+    # Structure : (CV)
+        1. Introduction
+        2. Summary
+        3. Education
+        4. Experience 
+        5. Projects
+        6. Skills
+        7. Extra carricular
+        8. Achievements / Honors
+        9. Courses / Trainings
+        10. Referances
+    
 
 
 
