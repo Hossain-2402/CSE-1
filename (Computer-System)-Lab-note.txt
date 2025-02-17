@@ -182,8 +182,10 @@ CV writing :
         9. Courses / Trainings
         10. Referances
 
+    --------------------
+   |  Example template  |
+    --------------------
 
-    # Example template : 
 
                                                                                                   [Name]
                                                                                                 [Location]                                                             [Image]
