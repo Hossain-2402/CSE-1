@@ -799,6 +799,141 @@ int main(){
 
 
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                    
+//                                          Lab-8
+
+#include<stdio.h>
+#include<string.h>
+
+int main(){
+
+    char ch[8];
+    gets(ch);
+    printf("%c",ch[8]);
+--------------------------------------------------------------------------------------------------------------------------------
+
+    char ch[8] = {'A','U','S','T','\0'};
+
+    printf("%s",ch);
+--------------------------------------------------------------------------------------------------------------------------------
+
+    char ch1[] = {'A','U','S','T','\0'};
+
+    int a = strlen(ch1); // a = 4
+
+    char ch2[] = {'A','U','S','T'};
+    int b = strlen(ch2); // b = 8 . here the ch2 allocates 8 spaces for optimization
+
+    printf("%d, %d", a,b);
+--------------------------------------------------------------------------------------------------------------------------------
+
+    char ch1[8]; // Here the size has to be mentioned
+
+    gets(ch1);
+
+    int i = 0;
+    while(ch1[i] != '\0'){
+        i++;
+    }
+    printf("Length = %d", i);
+--------------------------------------------------------------------------------------------------------------------------------
+
+    char ch1[] = "AUST";
+    char ch2[] = "CSE";
+
+    printf("%s %s\n", ch1,ch2);
+
+    strcpy(ch1,ch2); // strcpy(terget,source)
+
+    printf("%s %s", ch1,ch2);
+--------------------------------------------------------------------------------------------------------------------------------
+
+    char ch1[] = "AUST";
+    char ch2[] = "CSE";
+
+    printf("%s %s\n", ch1,ch2);
+
+    strcat(ch1, " ");
+    strcat(ch1,ch2);
+
+    printf("%s %s", ch1,ch2);
+--------------------------------------------------------------------------------------------------------------------------------
+
+    char ch1[] = "AUST";
+    char ch2[] = "CSE";
+
+    printf("%s %s\n", ch1,ch2);
+
+    strcat(ch1, " ");
+    strcat(ch1,ch2);
+
+    printf("%s %s", ch1,ch2);
+--------------------------------------------------------------------------------------------------------------------------------
+
+    char ch1[] = "AUST";
+    char ch2[] = "AUST";
+
+    printf("%s %s\n", ch1,ch2);
+
+    int value = strcmp(ch1,ch2);
+
+    printf("%d ", value);
+
+    // returns 0  -> Similar
+    // returns -1 -> cha1 is shorter than ch2  [also if alphabatical order of ch1 < alphabatical order of ch2]
+    // returns 1 -> cha1 is larger than ch2 [also if alphabatical order of ch1 > alphabatical order of ch2]
+--------------------------------------------------------------------------------------------------------------------------------
+
+    char ch1[] = "A";
+    char ch2[] = "b";
+
+    printf("%s %s\n", ch1,ch2);
+
+    int value = strcmp(ch1,ch2);
+
+    printf("%d ", value);
+
+    // returns 0  -> Similar
+    // returns -1 -> cha1 is shorter than ch2  [also if alphabatical order of ch1 < alphabatical order of ch2]
+    // returns 1 -> cha1 is larger than ch2 [also if alphabatical order of ch1 > alphabatical order of ch2]
+    // It compares alphabate by alphabate. Stops when it finds a difference
+--------------------------------------------------------------------------------------------------------------------------------
+
+    char ch1[] = "a";
+    char ch2[] = "A";
+
+    strupr(ch1);
+    printf("%s\n", ch1);
+
+    strlwr(ch2);
+    printf("%s\n", ch2);
+--------------------------------------------------------------------------------------------------------------------------------
+
+    char ch1[] = "Name";
+
+    printf("%s\n", ch1);
+    strrev(ch1);
+    printf("%s\n", ch1);
+--------------------------------------------------------------------------------------------------------------------------------
+
+    char ch1[] = "AUST";
+    char ch2[] = "CSE";
+
+    char temp[4];
+    strcpy(temp,ch1);
+    strcpy(ch1,ch2);
+    printf("%s\n",ch1);
+    strcpy(ch2,temp);
+    printf("%s\n",ch2);
+
+
+
+
+}
+
+
+
 
 
 
