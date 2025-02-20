@@ -1027,6 +1027,346 @@ for(int i=0;i<=5;i++){
 
 
 
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                    Lec-22
+                                    ------
+
+
+
+
+
+
+
+# Recursive function :
+    # Definition : A recursive function is a function that calls itself to solve a problem
+
+    int f(){
+        printf("Welcome to the function");
+        f();
+
+        return 0;
+    }
+
+    int main(){
+        f(); // The function "f()" is a recursive function 
+    }
+
+    // We use a base case condition to stop a recursive function 
+
+# Standard recursive fuction: 
+    # Syntax :
+        return_type function_name(parameter){
+            if(base_condition){
+                return base value;
+            }
+            return function_name(argument);
+        }
+
+# Factorial using recursive function : 
+        int fact(int n){
+            if(n == 0){
+                return 1;
+            }
+            return n*fact(n-1);
+        }
+
+        int main(){
+            int n = 5;
+            int result = fact(n);
+            printf("%d",result);
+        }
+
+# Simulation : 
+
+    5! = 5x4x3x2x1 = 5x(4!)
+    4! = 4x3x2x1   = 4x(3!)
+    3! = 3x2x1     = 3x(2!)
+    2! = 2x1       = 2x(1!)
+    1! = 1         = 1x(0!)
+    0! = 1         = 1 
+
+
+    fact(5):
+    5 * fact(4)
+
+        fact(4):
+        4 * fact(3)
+
+            fact(3):
+            3 * fact(2)
+
+                fact(2):
+                2 * fact(1)
+
+                    fact(1):
+                    1 * fact(0)
+
+                        fact(0):
+                        return 1
+
+    > Now read the text below "from bottom to top":
+
+        fact(5): // function returns 120
+        5 * fact(4) // [5 * 24 = 120]
+
+            fact(4): // function returns 24
+            4 * fact(3) // [4 * 6 = 24]
+
+                fact(3): // function returns 6
+                3 * fact(2) // [3 * 2 = 6]
+
+                    fact(2): // function returns 2
+                    2 * fact(1) // [2 * 1 = 2]
+
+                        fact(1): // function returns 1
+                        1 * fact(0) // [1 * 1 = 1]
+
+                            fact(0): // function returns 1
+                            return 1 
+
+
+
+
+# Code for nth fibonacci number:
+
+    int fib(int n){
+        if(n == 0){
+            return 0;
+        }
+        if(n == 1){
+            return 1;
+        }
+        return fib(n-1) + fib(n-2);
+    }
+
+    int main(){
+        int result = fib(5); 
+        printf("%d",result);
+    }
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                    Lec-23
+                                    ------
+
+
+# Structure :
+    A structure in C is a user-defined data-type that allows combining multiple variable of different data types in a singal namespace
+
+
+# Syntax :
+    struct structure_name{
+        data_type member1;
+        data_type member2;
+        ............
+
+    };
+
+
+# Example :
+    struct Student{
+        char name[20];
+        int roll;
+        float cgpa;
+    };
+
+    // Convention is to keep the first letter of the struct_name capitalized
+
+    int main(){
+        struct Student s1;
+
+        scanf("%s",s1.name);
+        scanf("%d",&s1.roll);
+        scanf("%f",&s1.cgpa);
+
+
+    }
+
+
+# Another way :
+    struct Student{
+        char name[20];
+        int roll;
+        float cgpa;
+    }s1; // s1 is a global variable
+
+    // Convention is to keep the first letter of the struct_name capitalized
+
+    int main(){
+
+        scanf("%s",s1.name);
+        scanf("%d",&s1.roll);
+        scanf("%f",&s1.cgpa);
+
+    }
+
+# Assigning :
+    struct Student{
+        char name[20];
+        int roll;
+        float cgpa;
+    }s1; // s1 is a global variable
+
+
+    int main(){
+        s1.name[] = "Hossain";
+    }
+
+# Another way of making a structure : 
+    typedef struct{
+        char name[20];
+        int roll;
+        int cgpa;
+    } Student; // Alias for struct student
+
+    int main(){
+        Student s1; // No need to write struct
+
+        scanf("%s",s1.name);
+        scanf("%d",&s1.roll);
+        scanf("%f",&s1.cgpa);
+
+    }
+
+
+# Student type of "array" :
+    int main(){
+        Student s[5]; // student type of array
+
+        s[0].roll = 15;
+
+        for(int i=0;i<5;i++){
+            scanf("%s", s[i].name);
+            scanf("%d", &s[i].roll);
+            scanf("%f", &s[i].cgpa);
+        }
+    }
+
+
+# Assignment :
+    Employee :
+        > name
+        > id
+        > salary 
+        > date of birth 
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                    Lec-24
+                                    ------
+
+
+
+# Structure with pointer :
+    
+# Pointer (Definition) :
+    A pointer is a variable that holds memory address of another variable
+
+# Pointer :
+
+    int x = 5;
+    // initializing a variable called x allocates some space in the memory
+    // it holds a "value"
+
+
+    int *p = &x;
+    // initializing a pointer variable called p allocates some space in the memory
+    // but is stores "location" of another variable
+
+    // here &x is the memory location of the variable x 
+
+# Getting input using pointer : 
+
+    int x;
+    int *p = &x;
+
+    scanf("%d",p);
+    printf("%d",x);
+
+    -------- ------
+   | input |   5   |
+    -------- ------
+   | output|   5   |
+    -------- ------
+
+
+
+# "Method" in structure :
+
+    struct Student{
+        char name[20];
+        int roll;
+        float cgpa;
+    };
+
+    void display(struct Student *s){
+        printf("%s",s->name); // Since s is a pointer variable, to access any of its members, we use '->' instead of '.'
+        printf("%d",s->roll);
+        printf("%f",s->cgpa);
+    }
+
+
+    int main(){
+        struct Student std = {"Mark",101,3.95};
+
+        display(&std); // Since we sent the address as in argument of the function, this is called 'pass by reference' 
+
+        return 0;
+
+    }
+
+
+
+# Pass by reference : 
+
+    struct Student{
+        char name[20];
+        int roll;
+        float cgpa;
+    };
+
+    void display(struct Student *s){
+        s->roll = 202;
+        printf("%d",s->roll); // This prints : 202
+    }
+
+
+    int main(){
+        struct Student std = {"Mark",101,3.95};
+
+        display(&std);
+        printf("%d",std.roll); // This prints : 202
+        return 0;
+
+    }
+
+
+# Difference between 'pass by value' & 'pass by reference' :
+
+    void change_1(int x){
+        x += 20;
+    }
+
+    void change_2(int *x){
+        *x += 20;
+    }
+
+    int main(){
+        int x = 10;
+        change_1(x);
+        printf("%d",x); // Prints : 10 [because it is 'passed by value']
+
+        change_2(&x);
+        printf("%d",x); // Prints : 30 [because it is 'passed by reference']
+
+    }
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                                     Rough
                                     ------
