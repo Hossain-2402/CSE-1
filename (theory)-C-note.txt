@@ -1497,6 +1497,64 @@ for(int i=0;i<=5;i++){
     }
 
 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                    Lec-25
+                                    ------
+
+# Passing an array to a function :
+    double getsum(int arr[],int size){
+        double s = 0;
+        for(int i=0;i<size;i++){
+            s += arr[i];
+        }
+        return s;
+    }
+    int main(){
+        int balance[5] = {1,2,3,4,5};
+        double sum = getSum(balance,5);
+        printf("Total balance: %lf", sum);
+
+
+    }
+
+
+# Null pointer :
+    > Assigns a NULL value
+    > It points to nothing
+
+    int *ptr = NULL;
+    printf("%d",ptr); // prints : 0
+
+
+# Double pointer :
+    int x = 10;
+    int *a = &x;
+    int **ptr = &a;
+
+    printf("%p",ptr); // prints : &
+    printf("%p",*ptr); // prints : &x
+    printf("%d",**ptr); // prints : 10
+
+    > Simulation:
+        x --- 10
+        a --- &x
+        ptr --- &a
+
+
+# Function pointer:
+    void greet(){
+        printf("Hello world");
+
+    }
+
+    int main(){
+        void (*funcPtr)() = &greet;
+        funcPtr(); // same as writing : greet()
+    }
+
+
+
+
 
 
 
