@@ -751,7 +751,7 @@ for(int i=0;i<=5;i++){
 
     or we can use,
 
-    fgets(str); // This restricts the size of the string
+    fgets(str,sizeof(str),stdin); // This restricts the size of the string --------------------------------------------- This method is HIGHLY RECOMMENDED for string input
     printf("%s",str);
 
 # getchar() is a library function
@@ -785,20 +785,20 @@ for(int i=0;i<=5;i++){
 # Getting the length of the string :
     char str[] = "welcome";
 
-    int length = strlen(str);
+    int length = strlen(str);  // requires "#include<string.h>" on top
 
-    printf("Length L : %d",length); // requires "#include<string.h>" on top
+    printf("Length L : %d",length);
 
 # Copy a string :
     char str[20] = "welcome";
     char dest[20];
 
-    strcpy(dest,src); // requires "#include<string.h>" on top
+    strcpy(dest,str); // requires "#include<string.h>" on top
 
-    // then dest becoms "here".
+    // then dest becoms "welcome".
     // similar to dest = str
 
-    printf(dest);
+    printf(dest); // prints : welcome
 
 # Mergin to strings :
     char s1[20] = "Welcome";
@@ -827,9 +827,9 @@ for(int i=0;i<=5;i++){
     printf("\n %d",result); // see the value of result to understand the logics given below
 
     //Conditiongs : 
-        // 1. return 0 if s1 == s2
-        // 2. return <0 if s1<s2 (dictionary order)
-        // 3 return >0 if s1>s2 (dictionary order)
+        // 1. return 0 : if s1 == s2
+        // 2. return < 0 : if s1<s2 (dictionary order)
+        // 3 return > 0 : if s1>s2 (dictionary order)
 
 # Storing multiple strings : 
 
