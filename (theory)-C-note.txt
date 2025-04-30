@@ -1498,7 +1498,64 @@ for(int i=0;i<=5;i++){
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                                    Lec-25
+                                    Lec-26
+                                    ------
+
+
+# Syntax: ( malloc )
+	void* malloc(size_t size)
+	  |	    ----------
+	  |		|
+	  |		|
+	  |		-------> number of bytes to be allocated
+	  |
+	  --------- > returns a void pointer which needs to be typecasted
+
+	=> malloc is used to allocate a single block of memory
+
+# Application : ( malloc )
+     # malloc:
+       ------
+		int *p = (*int) malloc(5*sizeof(int));
+		free(p); [De-alloc the p memory]
+
+		=> Initially, malloc makes a garbage value in variable 'p' 
+
+
+
+# Syntax: ( calloc )
+	void* calloc(size_t num, size_t size);
+	  |	      ---------  -----------
+	  |		  |	      |
+	  |		  |	      |
+	  |		  |	      ---------> size of each elements
+	  |		  -------> number of elements
+	  |
+	  --------- > returns a void pointer which needs to be typecasted
+
+	=> calloc is used to allocate consecutive blocks of memories
+	
+# Application : ( calloc )
+     # calloc:
+       ------
+		int *p = (*int) calloc(5,sizeof(int));
+		free(p); [De-alloc the p memory]
+
+		----- ----- ----- ----- -----
+	       |  0  |  0  |  0  |  0  |  0  |		// Initially, calloc makes 5 consecutive memory block each with data = 0 
+		----- ----- ----- ----- -----
+
+	=> After using "free(p)", the pointer p still holds some memory. Then, 'p' is called 'dangling pointer'
+	=> to avoid this, write :
+		free(p);
+		p = NULL;
+# Relloc : 
+	int *p = (int*) relloc(p,10*size(int)) // [Previously variable 'p' was holding memory of 5 integers. Now this variable 'p' is holding memory of 10 integers]
+
+	=> Relloc ta ektu chatgpt theke nije nije detail e dekhe nish.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                    Lec-27
                                     ------
 
 # Passing an array to a function :
